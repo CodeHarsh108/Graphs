@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class ShortesPathInDAG {
+public class ShortestPathInDAG {
     private static void topoSort(int node, List<List<int[]>> adj, boolean[] visited, Stack<Integer> st){
         visited[node] = true;
         for (int[] neighbor : adj.get(node)){
